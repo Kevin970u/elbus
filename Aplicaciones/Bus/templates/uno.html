@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<style>
+    li{
+        float: left;
+    }
+    ul{ 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #9BCDCD;
+    }
+    li a{
+        display: block;
+        color: #911D24;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+    .col-md-4 img,
+    .col-md-6 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+<body>
+    <div class="container">
+        <br>
+        <a href="{% url 'inicio' %}">
+            <img class="container" src="https://elbusdelanavidad.com/wp-content/uploads/2019/07/cabecera-web-bus-navidad-11.png" alt="">
+        </a>
+
+        <ul>
+            <li></li>
+            <li class="border-right border-dark"><a href="{% url '1' %}">EL BUS Y RECORRIDO</a></li>
+            <li class="border-right border-dark"><a href="{% url '2' %}">¿QUÉ INCLUYE?</a></li>
+            <li class="border-right border-dark"><a href="{% url '3' %}">PRECIOS Y CALENDARIO</a></li>
+            <li class="border-right border-dark"><a href="{% url '4' %}">PREGUNTAS FRECUENTES</a></li>
+            <li ><a href="">COMPRA DE TICKETS</a></li>
+        </ul>
+        <br>
+    </div>
+    <div class="container">
+        <ul>
+            
+            <li class="border" style="background-color: black;"><a style="color: white;" href="{% url 'inicio' %}">HOME</a></li>
+            <li class="border " > </li>
+            <li><a style="color: white;" href="">EL BUS</a></li>
+      
+
+        </ul>
+        <br>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <h1>El Bus</h1>
+            <p style="font-size:19px; text-align: justify;">
+                Disponemos de un genuino y elegante autobús decorado con una preciosa tapicería en color granate emulando los colores reales de los famosos teatros españoles.
+
+
+            </p>
+            <p style="font-size:19px; text-align: justify;">
+                Realizaremos un recorrido panorámico por Madrid para poder ver todos los escenarios y luces navideñas de la capital de España.                
+            </p>
+            <p style="font-size:19px; text-align: justify;">
+                El autobús dispone de un gran equipo de sonido, equipo de luces y todo lo necesario para realizar la animación a bordo.
+
+                
+            </p>
+            <p style="font-size:19px; text-align: justify;">
+                Fue el primer autocar de Europa con un protocolo COVID implementado con un sistema de regeneración del aire que además elimina los virus e indica la calidad del aire en cada momento.
+
+
+
+
+                
+            </p>
+            <h3 style="text-align: justify;">
+                Recorrido
+
+
+
+            </h3>
+            <p style="font-size:19px; text-align: justify;"><b>
+                Punto de Inicio y Final
+
+            </b>
+                
+
+
+            </p>
+            <p style="font-size:19px; text-align: justify;">
+                Monumento a Pío Baroja – Calle Claudio Mayano 1
+
+
+            </p>
+            <p style="font-size:19px; text-align: justify;">
+                <b>                Zonas que pasamos
+                </b>
+
+
+            </p>
+            <p style="font-size:19px; text-align: justify;">
+                Alfonso XII, Plaza Carlos V. Paseo del Prado, Fuente de Neptuno, Plaza de Cibeles, Calle Alcalá, Puerta de Alcalá, Calle Velázquez, Calle Goya, Plaza de Colón, Paseo de la Castellana, Calle Ortega y Gasset, Calle Serrano, Puerta de Alcalá, Alfonso XII.
+
+
+            </p>
+            <p style="font-size:19px; text-align: justify;">
+                El recorrido podrá sufrir cambios según condiciones del tráfico.
+
+
+            </p>
+            <h3>
+                Animación
+            </h3>
+            <p style="font-size:19px; text-align: justify;" >
+                Durante el recorrido tendremos divertidas pruebas, juegos, animación, karaoke y los niños y mayores podrán disfrutar de nuestros personajes.
+
+
+            </p>
+
+            <h2 style=" text-align: center;">
+                Videos del bus de la Navidad de Madrid
+
+            </h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <video controls width="100%">
+                    <source src="https://youtu.be/OQHJB7cac70" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-6">
+                <video controls width="100%">
+                    <source src="https://youtu.be/6_oZCl-Lcvg" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <video controls width="100%">
+                    <source src="https://youtu.be/OQHJB7cac70" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-6">
+                <video controls width="100%">
+                    <source src="https://youtu.be/6_oZCl-Lcvg" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <video controls width="100%">
+                    <source src="https://youtu.be/OQHJB7cac70" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-6">
+                <video controls width="100%">
+                    <source src="https://youtu.be/6_oZCl-Lcvg" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+       
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1>Fotografías del Bus de la Navidad
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/BUS-DE-LA-NAVIDAD.jpeg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/20191127_143948-1024x768.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/20191127_144006-1024x768.jpg" alt="">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/20191127_144025-1024x768.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/20191127_144046-768x1024.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/20191122_2205531-1024x470.jpg" alt="">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/SHOWBUS-3-1024x768.jpeg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/SHOWBUS-4-1024x768.jpeg" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/SHOWBUS-5-1024x768.jpeg" alt="">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/SHOWBUS-6-1024x683.jpeg" alt="">
+            </div>
+            <div class="col-md-6">
+                <img src="https://elbusdelanavidad.com/wp-content/uploads/2022/12/SHOWBUS-7-1024x683.jpeg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+    
+    
+</body>
+</html>

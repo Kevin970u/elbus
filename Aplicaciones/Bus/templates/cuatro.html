@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<style>
+    li{
+        float: left;
+    }
+    ul{ 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #9BCDCD;
+    }
+    li a{
+        display: block;
+        color: #911D24;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+    .col-md-4 img,
+    .col-md-6 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+<body>
+    <div class="container">
+        <br>
+        <a href="{% url 'inicio' %}">
+            <img class="container" src="https://elbusdelanavidad.com/wp-content/uploads/2019/07/cabecera-web-bus-navidad-11.png" alt="">
+        </a>
+
+        <ul>
+            <li></li>
+            <li class="border-right border-dark"><a href="{% url '1' %}">EL BUS Y RECORRIDO</a></li>
+            <li class="border-right border-dark"><a href="{% url '2' %}">¿QUÉ INCLUYE?</a></li>
+            <li class="border-right border-dark"><a href="{% url '3' %}">PRECIOS Y CALENDARIO</a></li>
+            <li class="border-right border-dark"><a href="{% url '4' %}">PREGUNTAS FRECUENTES</a></li>
+            <li ><a href="{% url '5' %}">COMPRA DE TICKETS</a></li>
+        </ul>
+        <br>
+    </div>
+    <div class="container">
+
+        <ul>
+            
+            <li class="border " style="background-color: black;"><a style="color: white;" href="{% url 'inicio' %}">HOME</a></li>
+            <li class="border " > </li>
+            <li><a style="color: white;" href="">FAQS</a></li>
+
+         
+      
+
+        </ul>
+        <br>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <h1>Faqs</h1>
+            <p style="font-size:17px; text-align: justify;">
+                A continuación os exponemos las preguntas más frecuentes:
+
+
+
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Debemos llegar con antelación?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                Si, al menos con 5 minutos ya que la actividad debe salir con puntualidad.
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Cuál es el Timing?
+                
+            </p>
+
+            <p  style="font-size:17px; text-align: justify;" ><b>•  Noviembre: </b> Recepción en el autobús (15 min)</p>
+            <p  style="font-size:17px; text-align: justify;"><b>•  Diciembre:  </b>Paseo navideño con animación donde veremos el alumbrado navideño (45 min)</p>
+
+            <p style="font-size:28px; text-align: justify;">
+                ¿Qué capacidad tiene el autobús?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                El autobús tiene 61 plazas sentados
+
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Me puedo llevar comida dentro del autobús?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                No tenemos mesas ni nada similar para poder comer
+
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Hay baños dentro del autobús?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                No hay
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                Si llueve…¿Se cancela?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                En caso de lluvia la actividad no se cancela ya que el autobús está cubierto. Se recomienda en este caso 
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                llevar paraguas  para la espera.
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Se puede reservar solo para nosotros?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                Sí claro, completando todas las plazas del autobús.
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                Podemos sacar turnos especiales fuera de los horarios habituales.
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Cuánto dura?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                45 minutos
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                He comprado el ticket pero no puedo ir…
+                
+            </p>
+
+            <p  style="font-size:17px; text-align: justify;" ><b>•  Noviembre: </b> Una vez adquirido el ticket no se admiten cambios ni devoluciones.</p>
+            <p  style="font-size:17px; text-align: justify;"><b>•  Diciembre:  </b>Se puede cambiar de titular y que vayan otras personas en lugar de ustedes.</p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Está adaptado el autobús?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                Lo sentimos mucho pero por el momento no disponemos de rampa, esperamos en un futuro poder
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                solucionar este problema.
+
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Es descapotable el autobús? ¿Hace frío?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                No, el autobús es de una sola planta y dispone de calefacción.
+
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Para qué edades está recomendado?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                Es un juego para toda la familia pero especialmente para los más pequeños que viven con ilusión la
+
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                navidad.
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Se puede acceder con carros de bebé?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                No ya que no disponemos de rampa ni del espacio suficiente.
+
+
+            </p>
+            <p style="font-size:28px; text-align: justify;">
+                ¿Con cuánto tiempo debo reservar?
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                Habiendo plazas se puede comprar en el último minuto pero para garantizarnos plaza es mejor
+            </p>
+            <p style="font-size:17px; text-align: justify;">
+                comprar con días o semanas de antelación.            </p>
+    
+</body>
+</html>

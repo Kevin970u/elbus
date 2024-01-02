@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.js" integrity="sha384-6p5a5PHF9Rl92J75h0aB5D5Hvwccz6yq1jlSDuBAnfKaRxydAOBo1dC6hfcBibQ" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    .container {
+        max-width: 1000px; 
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+    }
+    li{
+        float: left;
+    }
+    ul{ 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+    li a{
+        display: block;
+        color: #0c0c0c;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+    p{
+        color: #8b8989 ;
+    }
+    h1,h2,h3,h4{
+        color: #8b8989 ;
+    }
+    
+    
+    #gallery {
+      text-align: center;
+    }
+    #calendario {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    #mainImage {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .page-box {
+    display: inline-block;
+    padding: 8px 12px; /* Ajusta el espaciado interior según sea necesario */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px; /* Espaciado entre los cuadros */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    }
+
+    .page-box.current {
+    background-color: gray; /* Color de fondo para la página actual */
+    color: #fff; /* Color del texto para la página actual */
+    }
+
+    
+</style>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6">
+                <a >
+                    <img style="height: 300px; width: 300px;" src="https://elbusturistico.com/wp-content/uploads/2019/01/logo-hd-bus-turistico-lq.png" alt="">
+                </a>
+            </div>
+                  
+
+            <div class="col-md-6 text-right">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <div class="search-container">
+                    <input type="text" name="q" placeholder="🔍 Buscar productos..." class="search-input">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            
+        </div>
+        <div class="row">
+
+            <div class="col-md-12">
+                <ul>
+                    <li></li>
+                    <li class="border-right border-dark"><a href="{% url '6' %}">Tours Turísticos</a></li>
+                    <li class="border-right border-dark"><a href="{% url '7' %}">Tours Fiestas</a></li>
+                    <li class="border-right border-dark"><a href="{% url '8' %}">Tours Navidad</a></li>
+                    <li class="border-right border-dark"><a href="{% url '9' %}">Tours Halloween</a></li>
+                    <li class="border-right border-dark"><a href="{% url '10' %}">Próximas Salidas</a></li>
+                    <li class="border-right border-dark"><a href="{% url '14' %}">Próximos Destinos</a></li>
+                    <li class="border-right border-dark"><a href="{% url '15' %}">Trayectoria</a></li>
+                    <li class="border-right border-dark"><a href=""></i>0,00€ 0 productos <i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <br>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <br>
+                <h1 style="color: black">El Bus Turístico de Madrid</h1>
+                <br>
+                <h5 style="background-color: #CF2E2E; text-align: center; color: white" >
+                    <br>
+                    Descubre Madrid de una forma diferente, original e inédita con nuestros tours temáticos y turísticos. Bienvenidos al universo original de las rutas experienciales de Partybus Tours.
+                    <br>
+                    <br>
+                </h5>
+                <br>
+                <br>
+                <center><h2 style="color: black">Salidas Temáticas Navidad</h2></center>
+                <br>
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <img style="width: 70%; height: 70%" src="https://elbusturistico.com/wp-content/uploads/2021/12/WhatsApp-Image-2022-12-01-at-16.56.55-450x450.jpeg" alt="">
+                        <p>El Bus de las Luces de Madrid</p>
+                        <button type="submit" style="background-color: chocolate;">Leer más</button>
+                    </div>
+                    <div class="col-md-6 ">
+                        <img style="width: 70%; height: 70%" src="https://elbusturistico.com/wp-content/uploads/2019/06/Cartel-bus-de-la-Navidad-3-450x450.png" alt="">
+                        <p>El Bus de la Navidad</p>
+                        <button type="submit" style="background-color: chocolate;">Leer más</button>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <center><h2 style="color: black">Salidas Regulares</h2></center>
+                <br>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img style="width: 100%" src="https://elbusturistico.com/wp-content/uploads/2023/06/Beerbus-450x450.png" alt="">
+                        <p>Beer Bus - El Bus de la Cerveza</p>
+                        <button type="submit" style="background-color: chocolate;">Leer más</button>
+                    </div>
+                    <div class="col-md-4 ">
+                        <img style="width: 100%" src="https://elbusturistico.com/wp-content/uploads/2021/12/Partybus-Club-450x450.png" alt="">
+                        <p>Partybus Club</p>
+                        <button type="submit" style="background-color: chocolate;">Leer más</button>
+                    </div>
+                    <div class="col-md-4">
+                        <img style="width: 100%" src="https://elbusturistico.com/wp-content/uploads/2021/08/Ciudades-Patrimonio-de-la-Humanidad-324x324.jpg" alt="">
+                        <p>Excursión Destinos Patrimonio de la Humanidad</p>
+                        <button type="submit" style="background-color: chocolate;">Leer más</button>
+                    </div>
+                    <br>
+                    <br>
+                    <center><h2 style="color: black">Salidas Temáticas Halloween</h2></center>
+                    <br>
+                    <br>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <img style="width: 70%; height: 70%" src="https://elbusturistico.com/wp-content/uploads/2023/06/Zombie-Tour-Experience-Madrid-2-450x450.png" alt="">
+                            <p>Zombie Tour Experience Madrid 2023</p>
+                            <button type="submit" style="background-color: chocolate;">Leer más</button>
+                        </div>
+                        <div class="col-md-6 ">
+                            <img style="width: 70%; height: 70%" src="https://elbusturistico.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-21-at-15.30.10-450x450.jpeg" alt="">
+                            <p>Los cazamonstruos</p>
+                            <button type="submit" style="background-color: chocolate;">Leer más</button>
+                        </div>
+                        <br>
+                        <br>
+                        <h2 style="color: black">Descubre las Ciudades Patrimonio de la Comunidad de Madrid</h2>
+                        <br>
+                        <h7 style="text-align: center;">
+                            <br>
+                            Descubre en un sólo día los principales tesoros de los destinos Patrimonio Mundial de la Comunidad de Madrid. Realizaremos una panorámica por la capital para enseñarnos el Paseo del Prado- Recoletos y el Parque del Retiro, a continuación visitaremos Alcalá de Henares, la ciudad de las letras declarada ciudad Patrimonio de la Humanidad y finalizaremos visitando Aranjuez, cuyos jardines y entorno fueron declarados Paisaje Cultural de la Humanidad.
+                            <br>
+                            <br>
+                        </h7>
+                        <div class="col-md-6">
+                            <img style="width: 100%; height: 100%" src="https://elbusturistico.com/wp-content/uploads/2021/08/Ciudades-Patrimonio-de-la-Humanidad-576x1024.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 ">
+                            <img style="width: 100%;" src="https://elbusturistico.com/wp-content/uploads/2021/08/Retiro-1024x576.jpg" alt="">
+                            <h7>Paseo del Prado- Recoletos y el Parque del Retiro</h7>
+                            <br>
+                            <br>
+                            <img style="width: 100%;" src="https://elbusturistico.com/wp-content/uploads/2021/08/Alcala%CC%81-de-Henares-2-1024x576.jpg" alt="">
+                            <h7>Paseo del Prado- Recoletos y el Parque del Retiro</h7>
+                            <br>
+                            <br>
+                            <img style="width: 100%;" src="https://elbusturistico.com/wp-content/uploads/2021/08/Aranjuez-3-1024x576.jpg" alt="">
+                            <h7>Aranjuez</h7>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <h2 style="color: black; text-align: left">El Bus Turístico de Madrid</h2>
+                        <br>
+                        <h7 style="text-align: justify;">
+                            <br>
+                            Te ofrecemos la alternativa más original y divertida de conocer la ciudad de Madrid, sin necesidad de utilizar vuestro propio vehículo, tanto si eres de la ciudad cómo si vienes de fuera y quieres disfrutar de la ciudad de una manera diferente, nuestra empresa te ofrece el genuino y original autobús qué recorre las calles de Madrid, de una manera muy divertida, ya qué está totalmente preparado para ir cantando y bailando la mejor música del momento durante todo el recorrido ya que dispone de luces y sonido de discoteca con guías y monitores qué os acompañaran durante todo el recorrido.
+                            <br>
+                            <br>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Si estás pensando en venir a la Capital de España o eres de la ciudad y quieres pasar una jornada divertida y diferente, no dudes en llamar y pedir información, ya qué son varios los horarios y los packs de los qué disponemos, para qué decidas cuál es el qué más se adapta a vuestros gustos y necesidades.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Nuestro autobús turístico, te posibilita un abanico muy amplio de posibilidades para disfrutar de una visita guiada por el Madrid más emblemático y castizo a la vez qué realizas un bonito tour panorámico por la gran ciudad, recorriendo las calles mas importantes, por precios realmente económicos y disfrutando a la vez de una ciudad diferente, donde nuestros guías te enseñaran los rincones más ocultos de la ciudad y su historia, donde muchas veces hasta los mismos madrileños desconocen.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            La mejor manera de qué puedas informarte de los horarios, días, recorrido, visitas guiadas, precios, etc., es realizar una llamada y pedir información , ya que te llevará muy poco tiempo, no te compromete a nada y nuestro personal estará encantado de solventar cualquier duda qué puedas tener y podrás comprobar también qué realizar un tour turístico por la ciudad y disfrutar de una interesante visita guiada por el Madrid más antiguo e interesante de la ciudad es sumamente económico y por lo tanto está al alcance de cualquier tipo de economía.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Sorprende a esos familiares o amigos qué vienen de fuera y quieren conocer de una manera diferente la gran ciudad, disfrutando durante unas horas de un tour realmente interesante y de una visita guiada, por el Madrid más castizo e interesante, donde pasaran una tarde diferente disfrutando de un recorrido realmente ameno, dónde quedarán totalmente agradecidos y satisfechos de conocer lo más interesante de la gran ciudad.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Si estás interesado o interesada en disfrutar de una ruta turística a bordo de nuestro único y genuino autobús turístico y de una visita guiada, a cargo de guías profesionales licenciados-as, en historia del arte, no dudes en pedir información de: días, horarios, ruta, precios y de todo aquello qué necesites saber y una vez lo tengas decidido haz la reserva con tiempo, para asegurarte el día y la hora en la qué queréis disfrutar de una jornada diferente realizando un gran tour turístico por la ciudad y una gran visita guiada por los lugares más emblemáticos del Madrid más antiguo.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Nuestra empresa te ofrece la posibilidad de conocer un Madrid diferente por un precio muy económico y apto para cualquier bolsillo, recorriendo a bordo de nuestro autobús turístico, la ciudad por las calles más importantes, un autentico tour con un recorrido muy interesante como: (Teatro Real, Plaza de España, catedral de la Almudena, Museo del Prado, etc.,) con un guía turístico , qué os irá explicando la historia de los monumentos y donde más tarde disfrutareis de un recorrido a pie, por el Madrid más castizo, donde junto con el guía disfrutareis de lugares tan emblemáticos como: el Pasadizo de San Ginés , donde se encuentra la famosa chocolatería de San Ginés, fundada en 1894, aunque cuatro años antes en 1980 era hospedería y mesón, un lugar frecuentado por los personajes más eruditos de la literatura y de las artes de aquellos tiempos, un recorrido muy ameno e interesante, para conocer lo más importante de la ciudad, con sus anécdotas y su verdadera historia, qué muchas veces aunque se sea de la ciudad , no se conoce con exactitud, para terminar en el famoso mercado de San Miguel, donde disfrutar de las tapas y los productos típicos de la Capital de España.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Si estás pensando en venir a hacer turismo por Madrid, o eres de la ciudad y quieres conocer lo más importante de ella, no dudes en llamar y pedir información, de los días, horarios, punto de partida, precio, del recorrido tanto panorámico cómo a pie, y de todo lo qué necesites saber, nuestro personal estará encantado de facilitarte cualquier detalle qué necesites y solventar las dudas qué puedas tener, pudiendo comprobar a la vez qué pasar una jornada donde el entretenimiento, la historia y la cultura van unidos y qué os harán pasar una tarde diferente a cualquier otra.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Llevamos años en el mercado ofreciendo las mejores rutas turísticas por la Capital, tanto a bordo del autobús con vista panorámica , cómo a pie, siempre acompañados de un guía turístico, todos ellos, diplomados y licenciados en historia del arte, qué os explicarán con todo lujo de detalles la historia de cada monumento y lugar qué visitareis, con las anécdotas más importantes y a veces desconocidas qué alberga la ciudad de Madrid.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Disfruta junto con tus amigos, amigas ó familiares, de un día diferente descubriendo los lugares más importantes y castizos de la Ciudad, o sorprende a esos familiares o amigos, qué quieren visitar Madrid y conocer los lugares más importantes, ya que a veces el hacer turismo por nuestra cuenta conlleva, qué haya monumentos y lugares qué dejamos de visitar, por creer qué son menos importantes y de ésta manera tienes garantizado qué conocerás lo más significativo y más importante qué alberga la Capital de España.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Si estás pensando en visitar la ciudad de Madrid y conocer los lugares y monumentos más importantes y castizos de la ciudad, nuestra empresa te ofrece un gran tour turístico, con vistas panorámicas a bordo de nuestro autobús, totalmente preparado para realizar éste tipo de rutas turísticas panorámicas y a la vez una visita guiada por los lugares más importantes y castizos del centro de la Ciudad, recorriendo a bordo del bus: Plaza de España, Puerta del Sol, Teatro Real, Catedral de la Almudena, Palacio Real, etc., y el tour a pie, visitando la puerta del Sol ( El Oso y el Madroño, el Kilometro Cero, etc.,) la chocolatería más famosa de todo Madrid como es la chocolatería de San Ginés, qué fue fundada en 1894, siendo anteriormente en 1890, mesón y hospedería, un lugar muy castizo, frecuentado en aquellos años, por los personajes más importantes de la literatura y de las artes, ubicada en el pasadizo de San Ginés, el Mercado de San Miguel, donde degustareis las tapas y productos, típicos de la ciudad, y un amplio recorrido donde los guías os irán contando la historia y las anécdotas qué en aquellos años ocurrieron y la mayoría de las veces, aunque se sea de la misma ciudad, se desconocen.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Si quieres descubrir los lugares más importantes y con más historia de la ciudad, dedica unos minutos a llamar y pedir información del tour panorámico qué vais a realizar, por las calles más importantes de la ciudad, de los lugares más castizos qué visitareis a pie, del punto de encuentro desde donde sale el bus, de los horarios, de los días, del precio y de todo lo qué incluye la gran ruta turística, donde tenéis garantizado pasar una jornada diferente y entretenida, conociendo Madrid, con sus monumentos, calles y anécdotas más importantes, por un precio realmente muy barato.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Cuando visitamos alguna ciudad y queremos hacer turismo, siempre tratamos de visitar los lugares más importantes ( museos, monumentos, plazas, etc.,) pero para garantizar qué no nos vamos a dejar nada importante por ver, lo mejor es hacerlo acompañados de un guía turístico, qué nos vaya contando la historia de aquello qué vamos viendo y para eso nuestra empresa os ofrece el autobús donde realizareis un itinerario turístico panorámico por las principales y más importantes calles de la ciudad, donde un guía os irá contando y explicando la historia de todos aquellos monumentos qué vayáis viendo, al igual qué en la ruta a pie, donde descubriréis el Madrid más castizo y emblemático con su historia y sus anécdotas, donde todos nuestros guías son licenciados y diplomados en Historia del Arte.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Infórmate de nuestro autobús turístico panorámico y de la visita guiada por el Madrid más castizo y una vez lo tengas decidido, haz tú reserva con tiempo, podrás comprobar, cómo descubrir la ciudad de una manera amena y entretenida es mucho más económico de lo qué siempre se piensa.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Si quieres conocer los monumentos más importantes de la ciudad de Madrid y los lugares más castizos de la ciudad, conociendo su verdadera historia, nuestro autobús turístico, te ofrece ésta posibilidad, por un módico precio, de realizar un tour panorámico por las principales calles de la gran ciudad, conociendo la historia de los edificios y monumentos más emblemáticos, como por ejemplo: la Catedral de la Almudena, el Museo del Prado, el Palacio Real, Plaza de España, Puerta del Sol, San Francisco el Grande, el Teatro Real, etc., y un recorrido a pie, por el centro de la ciudad, conociendo los lugares más castizos cómo: el Pasadizo de San Ginés, donde se encuentra la chocolatería más antigua de la ciudad, cómo es la chocolatería de San Ginés, fundada en el año 1894, ya que cuatro años antes, era mesón y hospedería, frecuentada por los personajes más eruditos del arte y de la literatura, donde realizaban durante horas sus tertulias, La Puerta del Sol donde se encuentran ubicados El Oso y El Madroño, de piedra y bronce, qué simbolizan las armas heráldicas de la Villa de Madrid, la Real Casa de Correos, la Mariblanca, el Mercado de San Miguel, donde disfrutareis de los productos gourmet y las tapas más típicas de la Capital de España, etc., un gran tour, donde en todo momento tanto en el autobús cómo en la visita guiada, iréis acompañados de un o una guía turística, licenciada-o y diplomada-o en historia del arte, qué os irá contando con todo detalle, la verdadera historia de cada lugar y monumento qué visitéis.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Aquí tenéis la oportunidad, por un precio muy económico y asequible, de conocer la verdadera historia de la ciudad ( monumentos, plazas, calles, etc.,) disfrutando de una tarde diferente, compaginando cultura y ocio.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Si próximamente vas a visitar la ciudad de Madrid y quieres conocer los lugares más importantes y castizos de la ciudad, dedica un momento del día a pedir información, ya que es algo que no te supone ningún compromiso y es la mejor manera, de que puedas informarte de todos los detalles, del itinerario panorámico y de la visita guiada, nuestro personal estará encantado de facilitarte todos los detalles qué quieras saber como: punto de encuentro, recorrido, precio, horarios, días, etc., a la vez qué darán respuesta a las dudas qué puedas tener.
+                            <br>
+                            <br>
+                        </h7>
+                        </h7>
+                        <h7 style="text-align: justify;">
+                            Si eres de la ciudad, cómo si vienes a visitarla y quieres conocer todos los detalles y los lugares más importantes, con sus anécdotas y su historia, nuestro autobús panorámico y la visita guiada por el centro de la ciudad, te están esperando, para qué disfrutes junto con las personas qué tú quieras de una jornada especial por un precio muy económico.
+                            <br>
+                            <br>
+                        </h7>
+
+
+                            </div>
+                            </div>
+
+                <br>
+                 <br>
+                 <br>
+            </div>
+        </div>
+    </div>
+    <div class="row  " style="background-color: #e7e3e3;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-3">
+            <br>
+            <h4>AGENCIA OFICIAL AUTORIZADA</h4>
+            <img src="https://elbusturistico.com/wp-content/uploads/2019/01/COMUNIDAD-DE-MADRID-150x150.png" alt="">
+            <p>CICMA 2574</p>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-3">
+            <br>
+            <h4>DESCARGA MAPA BUS TURÍSTICO</h4>
+            <img src="https://elbusturistico.com/wp-content/uploads/2019/01/WhatsApp-Image-2019-01-19-at-12.46.32-150x150.jpeg" alt="">
+            <p>Mapa Turístico Madrid</p>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-md-3">
+            <br>
+            <h4>TURISMO MADRID</h4>
+            <p>Mi cuenta</p>
+            <p>Política de Privacidad</p>
+            <p>Política de Cookies</p>
+            <p>Contrato de transporte</p>
+            <p>Calidad del Aire</p> 
+            <p>Mapa web</p>
+            <p>Contacto</p>
+        </div>
+        
+    </div>
+    <div class="row" style="background-color: #e7e3e3;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <div class="col-md-4">  
+            <p>© El Bus Turístico de Madrid 2023</p>
+            <p>Política de PrivacidadCreado con Storefront y WooCommerce.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
